@@ -125,3 +125,9 @@ TARGET_KERNEL_VARIANT_CONFIG := msm8974_sec_hlte_eur_defconfig
 
 # PowerHAL extension
 TARGET_POWERHAL_SET_INTERACTIVE_EXT := device/samsung/hlte/power/power_ext.c
+
+# The "new" GPS is really the old GPS, override it.
+BOARD_HAVE_NEW_QC_GPS :=
+
+# We don't use old-ass RPC
+TARGET_NO_RPC := true
